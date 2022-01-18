@@ -6,7 +6,7 @@
     "url": "https://github.com/luklus"
   },
   "description": "Fake data generator for JavaScript. Fake Name.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "files": [
     "dist"
   ],
