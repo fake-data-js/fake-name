@@ -1,0 +1,66 @@
+{
+  "name": "@fakedatajs/fake-name",
+  "author": {
+    "email": "ll_code@outlook.com",
+    "name": "Łukasz Łusiak",
+    "url": "https://github.com/luklus"
+  },
+  "description": "Fake data generator for JavaScript. Fake Name.",
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "fake data",
+    "fake first name",
+    "fake last name",
+    "fake name",
+    "fake",
+    "faker",
+    "fakerjs"
+  ],
+  "types": "./dist/types/index.d.ts",
+  "main": "./dist/fake-name.umd.js",
+  "module": "./dist/fake-name.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/fake-name.es.js",
+      "require": "./dist/fake-name.umd.js"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": "eslint"
+  },
+  "scripts": {
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "dev": "vite",
+    "format": "prettier --write *",
+    "lint": "eslint --ext \".js,.ts\" --ignore-path .gitignore .",
+    "preview": "vite preview",
+    "test:coverage": "vitest --coverage",
+    "test": "vitest"
+  },
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fake-data-js/fake-name.git"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^16.0.2",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@types/node": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
+    "@typescript-eslint/parser": "^5.9.1",
+    "c8": "^7.11.0",
+    "eslint": "^8.7.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.7",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.4",
+    "vite": "^2.7.12",
+    "vitest": "^0.1.18"
+  }
+}
