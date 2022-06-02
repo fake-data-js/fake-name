@@ -47,7 +47,7 @@
     "url": "https://github.com/fake-data-js/fake-name.git"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.0.2",
+    "@commitlint/cli": "^17.0.2",
     "@commitlint/config-conventional": "^16.0.0",
     "@types/node": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "^5.9.1",
